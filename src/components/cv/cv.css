@@ -89,6 +89,10 @@ li::after{
 .cv .head .title .name{
     width: fit-content;
 }
+.cv .head .title .name h1{
+    text-transform: uppercase;
+    font-family: 'Almarai', sans-serif!important;
+}
 .cv .head .title .name h1,
 .cv .head .title .name h4{
     position: relative;
@@ -112,6 +116,10 @@ li::after{
     position: relative;
     text-align: left;
     margin-top: 50px;
+    height: 250px;
+}
+.cv .head .title .about-me h5{
+    width: 250px;
 }
 .cv .head .title .about-me::before{
     content: "";

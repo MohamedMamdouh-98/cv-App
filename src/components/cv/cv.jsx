@@ -5,7 +5,20 @@ import { BsGithub, BsLinkedin, BsTelephoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 
 const Cv = () => {
+  //get skills
   const getData = JSON.parse(localStorage.getItem("todos"));
+  //get about me
+  const getAbout = JSON.parse(localStorage.getItem("about"));
+//get contact me
+
+//get name && work
+const getName = JSON.parse(localStorage.getItem("name"));
+const getWork = JSON.parse(localStorage.getItem("work"));
+//get contact me
+const getGmail = JSON.parse(localStorage.getItem("gmail"));
+const getPhone = JSON.parse(localStorage.getItem("phone"));
+const getLinkedin = JSON.parse(localStorage.getItem("linkedin"));
+const getGithub = JSON.parse(localStorage.getItem("github"));
 
   return (
     <div className="container-cv">
@@ -16,20 +29,13 @@ const Cv = () => {
           </div>
           <div className="title">
             <div className="name">
-              <h1>Mohamed Mamdouh</h1>
-              <h4>Frontend Develober</h4>
+              <h1>{getName}</h1>
+              <h4>{getWork}</h4>
             </div>
             <div className="about-me">
               <h5>About me</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
-                odio Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, fugiat qui autem quia sunt laborum numquam, beatae
-                dicta architecto corporis consequuntur doloribus? Magnam non
-                eius rerum facere reiciendis minus dolore exercitationem. Ipsum
-                maxime, amet, expedita aliquid saepe, id quibusdam repudiandae
-                quam temporibus consequuntur perspiciatis culpa vero soluta
-                aspernatur iure perferendis.
+                {getAbout}
               </p>
             </div>
           </div>
@@ -40,25 +46,25 @@ const Cv = () => {
               <span>
                 <SiGmail />
               </span>
-              mohamed.work45@gmail.com
+              {getGmail}
             </p>
             <p>
               <span>
               <BsTelephoneFill/>
               </span>
-              +20 10 64 31 65 45
+              + 2{getPhone}
             </p>
             <p>
               <span>
               <BsLinkedin/>
               </span>
-              https://www.linkedin.com/feed/
+              {getLinkedin}
             </p>
             <p>
               <span>
                 <BsGithub />
               </span>
-              https://github.com/MohamedMamdouh-98
+              {getGithub}
             </p>
           </div>
           <div className="skills">

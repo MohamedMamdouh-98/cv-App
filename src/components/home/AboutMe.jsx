@@ -15,6 +15,9 @@ const AboutMe = () => {
     setText("");
   };
 
+  localStorage.setItem("about", JSON.stringify(text));
+
+
   const handleOnSubmit = (event) => {
     event.preventDefault();
   };

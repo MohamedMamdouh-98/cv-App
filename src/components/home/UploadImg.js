@@ -13,6 +13,7 @@ const UploadImg = () => {
       reader.readAsDataURL(e.target.files[0]);
     }
   };
+
   return (
     <div className="upload-img">
       <div className="button-upload">

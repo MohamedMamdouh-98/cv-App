@@ -49,6 +49,12 @@ const Contact = () => {
     setGithub("");
   };
 
+  localStorage.setItem("gmail", JSON.stringify(gmail));
+  localStorage.setItem("phone", JSON.stringify(phone));
+  localStorage.setItem("linkedin", JSON.stringify(linkedin));
+  localStorage.setItem("github", JSON.stringify(github));
+
+
   const handleOnSubmit = (event) => {
     event.preventDefault();
   };

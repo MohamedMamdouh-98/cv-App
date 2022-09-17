@@ -7,11 +7,11 @@ import UploadImg from "./UploadImg";
 const HomePage = () => {
   return (
     <>
+    <UploadImg />
       <Title />
-      <Skills />
       <AboutMe />
+      <Skills />
       <Contact />
-      <UploadImg />
     </>
   );
 };

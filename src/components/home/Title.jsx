@@ -26,6 +26,10 @@ const Title = () => {
     setWork("");
   };
 
+  localStorage.setItem("name", JSON.stringify(name));
+  localStorage.setItem("work", JSON.stringify(work));
+
+
   const handleOnSubmit = (event) => {
     event.preventDefault();
   };
