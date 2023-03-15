@@ -1,8 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const cv = () => {
   return (
-    <div>cv</div>
+    <div>
+    <Link to="/">home</Link>
+    </div>
   )
 }
 

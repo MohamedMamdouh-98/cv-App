@@ -16,11 +16,6 @@ const showReturn = ()=>{
           <Route path="/" element={<HomePage />} />
           <Route path="/cv" element={<Cv />} />
         </Routes>
-        <button  onClick={showReturn} to="/cv">
-        {
-          showCv? <Link to="/cv">show cv</Link> : <Link to="/">home</Link>
-        }
-        </button>
       </BrowserRouter>
     </div>
   );

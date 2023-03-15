@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
 import Skills from "./Skills";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <AboutMe />
       <Skills />
       <Contact />
+      <Link to="/cv">show cv</Link>
     </>
   );
 };
