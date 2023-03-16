@@ -1,14 +1,9 @@
-import React, { useState } from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cv from "./components/cv/cv";
 import HomePage from "./components/home/HomePage";
 
 const App = () => {
-const[showCv, setShowCv] = useState(false)
-
-const showReturn = ()=>{
-  setShowCv(!showCv)
-}
   return (
     <div className="container">
       <BrowserRouter>
