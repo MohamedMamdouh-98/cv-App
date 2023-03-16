@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AboutMe from "./AboutMe";
-import Skills from "./Skills";
-import Title from "./Title";
+import Application from "../Application";
+import '../cv/cv.css'
 const HomePage = () => {
   return (
     <>
-      <Title />
-      <AboutMe />
-      <Skills />
-      <Link to="/cv">show cv</Link>
+      <Application />
+      <Link to="/cv" className='btn-show-cv'>show cv</Link>
     </>
   );
 };
